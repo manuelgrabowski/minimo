@@ -28,7 +28,7 @@
 
       <li>
         <a href='{{ .Page.RelPermalink }}' style='font-size:{{ $size }}em'>
-          {{- .Page.Title -}}
+          {{- lower .Page.Title -}}
         </a>
       </li>
     {{- end -}}
