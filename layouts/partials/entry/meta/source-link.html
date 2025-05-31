@@ -1,0 +1,6 @@
+{{ if .Site.Params.settings.sourceBaseUrl }}
+  <span class='source-link'>
+    {{- partial "svg/icon" "edit" -}}
+    <a href='{{ .Site.Params.settings.sourceBaseUrl }}/{{ urlquery .File.Path }}'>View source</a>
+  </span>
+  {{ end }}
